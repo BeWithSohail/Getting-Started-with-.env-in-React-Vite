@@ -12,6 +12,7 @@ $ yarn create vite
 #or
 $ pnpm create vite
 
+<br > 
 Install dependencies:
 
 $ cd my-project
@@ -23,6 +24,7 @@ $ yarn
 $ pnpm install
 Add .env dependency:
 
+<br > 
 $ npm install dotenv
 #or
 $ yarn add dotenv
@@ -36,11 +38,13 @@ $ touch .env
 API_URL=http://localhost:3030
 Edit ‘vite.config.ts’ file
 
+<br > 
 // import dotenv package
 import dotenv from 'dotenv';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 
+<br > 
 // run package config
 dotenv.config();
 // https://vitejs.dev/config/
@@ -52,6 +56,6 @@ export default defineConfig({
   }
 });
 Now you can use environment variable in your project
-
+<br > 
 // process.env.[env-var]
 console.log(process.env.API_URL)
